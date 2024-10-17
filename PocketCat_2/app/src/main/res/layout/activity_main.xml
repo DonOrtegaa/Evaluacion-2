@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5efeb"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="650dp"
+        android:background="#f5efeb"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/gato2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="PocketCat"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#1c1c1c"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Iniciar sesion como usuario"
+            android:textAlignment="center"
+            android:textColor="#2f4156"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2f4156"
+            android:onClick="onClickAcceder"
+            android:text="Ingresar"
+            android:textColor="#f5efeb" />
+
+        <Button
+            android:id="@+id/boton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2f4156"
+            android:onClick="onClickAcceder"
+            android:text="Registrarse"
+            android:textColor="#f5efeb" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
